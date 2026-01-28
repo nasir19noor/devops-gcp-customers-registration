@@ -109,27 +109,4 @@ attribute.repository = assertion.repository
 assertion.repository=='nasir19noor/devops-gke-helm'
 ```
 
-### Step 7: Create Helm Chart Structure
-```
-cd gcp
-helm create chart
-```
 
-helm install my-first-nginx ./chart
-helm uninstall my-first-nginx ./my-nginx-chart
-helm list
-helm upgrade my-first-nginx ./chart
-
-Check history:
-```
-helm history my-first-nginx
-```
-
-REVISION        UPDATED                         STATUS          CHART           APP VERSION     DESCRIPTION
-1               Mon Jul 14 16:36:59 2025        superseded      chart-0.1.0     1.16.0          Install complete
-2               Mon Jul 14 17:21:13 2025        deployed        chart-0.1.0     1.16.0          Upgrade complete
-
-Rollback
-```
-helm rollback my-first-nginx 1
-```
